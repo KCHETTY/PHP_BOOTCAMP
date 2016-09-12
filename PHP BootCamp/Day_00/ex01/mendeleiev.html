@@ -1,0 +1,610 @@
+<!DOCTYPE HTML>
+
+<html lang = "eng">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Mendeleïev</title>
+		<style type = "text/css">
+			td {width: 75px; height: 75px;}
+    		.atomic_no 	{
+        					position: absolute;
+            				font-size: small;
+            				margin-top: -18px;
+            				margin-left: 59px
+    					}
+
+    		.symbol		{
+        					  text-align: center;
+        					  font-weight: bold;
+        					  font-size: 25px;
+        					  margin:auto;
+    					}
+
+    		.name		{
+    							position: absolute;
+    							font-size: x-small;
+    							margin-top: -1px;
+    							margin-left: 4px;
+    					}
+    		.mass
+    					{
+    						  position: absolute;
+    						  font-size: x-small;
+    						  margin-top: 10px;
+    						  margin-left: 4px;
+    					}
+    	</style>				
+	</head>
+
+	<body>
+		<table contenteditable="true">
+			<tr>
+				<td bgcolor = "#BE81F7">
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Hydrogen</div>
+					<div class = "mass">1.00794</div>
+				</td>
+				<td colspan = "16"></td>
+				<td bgcolor = "#58ACFA">
+					<div class = "atomic_no">2</div>
+					<div class = "symbol">He</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">4.002602</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td bgcolor = "#F7BE81"> 
+					<div class = "atomic_no">3</div>
+					<div class = "symbol">Li</div>
+					<div class = "name">Lithium</div>
+					<div class = "mass">6.941</div>
+				</td>
+				<td bgcolor = "#F5D0A9"> 
+					<div class = "atomic_no">4</div>
+					<div class = "symbol">Be</div>
+					<div class = "name">Beryllium</div>
+					<div class = "mass">9.012182</div>
+				</td>
+				<td colspan = "10"></td>
+				<td bgcolor = "#9FF781"> 
+					<div class = "atomic_no">5</div>
+					<div class = "symbol">B</div>
+					<div class = "name">Boron</div>
+					<div class = "mass">10.811</div>
+				</td>
+				<td bgcolor = "#BE81F7"> 
+					<div class = "atomic_no">6</div>
+					<div class = "symbol">C</div>
+					<div class = "name">Carbon</div>
+					<div class = "mass">12.0107</div>
+				</td>
+				<td bgcolor = "#BE81F7"> 
+					<div class = "atomic_no">7</div>
+					<div class = "symbol">N</div>
+					<div class = "name">Nitrogen</div>
+					<div class = "mass">14.0067</div>
+				</td>
+				<td bgcolor = "#BE81F7"> 
+					<div class = "atomic_no">8</div>
+					<div class = "symbol">O</div>
+					<div class = "name">Oxygen</div>
+					<div class = "mass">15.9994</div>
+				</td>
+				<td bgcolor = "#F781F3">  
+					<div class = "atomic_no">9</div>
+					<div class = "symbol">F</div>
+					<div class = "name">Fluorine</div>
+					<div class = "mass">18.998403</div>
+				</td>
+				<td bgcolor = "#58ACFA"> 
+					<div class = "atomic_no">10</div>
+					<div class = "symbol">Ne</div>
+					<div class = "name">Neon</div>
+					<div class = "mass">20.1797</div>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor = "#F7BE81"> 
+					<div class = "atomic_no">11</div>
+					<div class = "symbol">Na</div>
+					<div class = "name">Sodium</div>
+					<div class = "mass">22.98976</div>
+				</td>
+				<td bgcolor = "#F5D0A9"> 
+					<div class = "atomic_no">12</div>
+					<div class = "symbol">Mg</div>
+					<div class = "name">Magnesium</div>
+					<div class = "mass">24.3050</div>
+				</td>
+				<td colspan = "10"></td>
+				<td bgcolor = "#F5DA81"> 
+					<div class = "atomic_no">13</div>
+					<div class = "symbol">Al</div>
+					<div class = "name">Aluminium</div>
+					<div class = "mass">26.98153</div>
+				</td>
+				<td bgcolor = "#9FF781"> 
+					<div class = "atomic_no">14</div>
+					<div class = "symbol">Si</div>
+					<div class = "name">Silicon</div>
+					<div class = "mass">28.0855</div>
+				</td>
+				<td bgcolor = "#BE81F7"> 
+					<div class = "atomic_no">15</div>
+					<div class = "symbol">P</div>
+					<div class = "name">Phosphorus</div>
+					<div class = "mass">30.97696</div>
+				</td>
+				<td bgcolor = "#BE81F7"> 
+					<div class = "atomic_no">16</div>
+					<div class = "symbol">S</div>
+					<div class = "name">Sulfur</div>
+					<div class = "mass">32.065</div>
+				</td>
+				<td bgcolor = "#F781F3"> 
+					<div class = "atomic_no">17</div>
+					<div class = "symbol">Cl</div>
+					<div class = "name">Chlorine</div>
+					<div class = "mass">35.453</div>
+				</td>
+				<td bgcolor = "#58ACFA"> 
+					<div class = "atomic_no">18</div>
+					<div class = "symbol">Ar</div>
+					<div class = "name">Argon</div>
+					<div class = "mass">39.948</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td bgcolor = "#F7BE81"> 
+					<div class = "atomic_no">19</div>
+					<div class = "symbol">K</div>
+					<div class = "name">Potassium</div>
+					<div class = "mass">39.0983</div>
+				</td>
+				<td bgcolor = "#F5D0A9"> 
+					<div class = "atomic_no">20</div>
+					<div class = "symbol">Ca</div>
+					<div class = "name">Calcium</div>
+					<div class = "mass">40.078</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">21</div>
+					<div class = "symbol">Sc</div>
+					<div class = "name">Scandium</div>
+					<div class = "mass">44.95591</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">22</div>
+					<div class = "symbol">Ti</div>
+					<div class = "name">Titanium</div>
+					<div class = "mass">47.867</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">23</div>
+					<div class = "symbol">V</div>
+					<div class = "name">Vanadium</div>
+					<div class = "mass">50.9415</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">24</div>
+					<div class = "symbol">Cr</div>
+					<div class = "name">Chromium</div>
+					<div class = "mass">51.9962</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">25</div>
+					<div class = "symbol">Mn</div>
+					<div class = "name">Manganese</div>
+					<div class = "mass">54.93804</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">26</div>
+					<div class = "symbol">Fe</div>
+					<div class = "name">Iron</div>
+					<div class = "mass">55.845</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">27</div>
+					<div class = "symbol">Co</div>
+					<div class = "name">Cobalt</div>
+					<div class = "mass">58.93319</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">28</div>
+					<div class = "symbol">Ni</div>
+					<div class = "name">Nickel</div>
+					<div class = "mass">58.6934</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">29</div>
+					<div class = "symbol">Cu</div>
+					<div class = "name">Copper</div>
+					<div class = "mass">63.546</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">30</div>
+					<div class = "symbol">Zn</div>
+					<div class = "name">Zinc</div>
+					<div class = "mass">65.38</div>
+				</td>
+				<td bgcolor = "#F5DA81"> 
+					<div class = "atomic_no">31</div>
+					<div class = "symbol">Ga</div>
+					<div class = "name">Gallium</div>
+					<div class = "mass">69.723</div>
+				</td>
+				<td bgcolor = "#9FF781"> 
+					<div class = "atomic_no">32</div>
+					<div class = "symbol">Ge</div>
+					<div class = "name">Germanium</div>
+					<div class = "mass">72.64</div>
+				</td>
+				<td bgcolor = "#9FF781"> 
+					<div class = "atomic_no">33</div>
+					<div class = "symbol">As</div>
+					<div class = "name">Arsenic</div>
+					<div class = "mass">74.92160</div>
+				</td>
+				<td bgcolor = "#BE81F7"> 
+					<div class = "atomic_no">34</div>
+					<div class = "symbol">Se</div>
+					<div class = "name">Selenium</div>
+					<div class = "mass">78.96</div>
+				</td>
+				<td bgcolor = "#F781F3"> 
+					<div class = "atomic_no">35</div>
+					<div class = "symbol">Br</div>
+					<div class = "name">Bromine</div>
+					<div class = "mass">79.904</div>
+				</td>
+				<td bgcolor = "#58ACFA"> 
+					<div class = "atomic_no">36</div>
+					<div class = "symbol">Kr</div>
+					<div class = "name">Krypton</div>
+					<div class = "mass">83.798</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td bgcolor = "#F7BE81"> 
+					<div class = "atomic_no">37</div>
+					<div class = "symbol">Rb</div>
+					<div class = "name">Rubidium</div>
+					<div class = "mass">85.4678</div>
+				</td>
+				<td bgcolor = "#F5D0A9"> 
+					<div class = "atomic_no">38</div>
+					<div class = "symbol">Sr</div>
+					<div class = "name">Strontium</div>
+					<div class = "mass">87.62</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">39</div>
+					<div class = "symbol">Y</div>
+					<div class = "name">Yttrium</div>
+					<div class = "mass">88.90585</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">40</div>
+					<div class = "symbol">Zr</div>
+					<div class = "name">Zirconium</div>
+					<div class = "mass">91.224</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">41</div>
+					<div class = "symbol">Nb</div>
+					<div class = "name">Niobium</div>
+					<div class = "mass">92.90638</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">42</div>
+					<div class = "symbol">Mo</div>
+					<div class = "name">Molybdenum</div>
+					<div class = "mass">95.96</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">43</div>
+					<div class = "symbol">Tc</div>
+					<div class = "name">Technetium</div>
+					<div class = "mass">98</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">44</div>
+					<div class = "symbol">Ru</div>
+					<div class = "name">Ruthenium</div>
+					<div class = "mass">101.07</div>
+				<!--https://upload.wikimedia.org/wikipedia/commons/4/4d/Periodic_table_large.svg-->	
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F5DA81"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F5DA81"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#9FF781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#9FF781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F781F3"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#58ACFA"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td bgcolor = "#F7BE81"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F5D0A9"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F5DA81"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F5DA81"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F5DA81"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#9FF781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F781F3"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#58ACFA"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td bgcolor = "#F7BE81"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F5D0A9"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#F3F781"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#A4A4A4"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#A4A4A4"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#A4A4A4"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#A4A4A4"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#A4A4A4"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+				<td bgcolor = "#A4A4A4"> 
+					<div class = "atomic_no">1</div>
+					<div class = "symbol">H</div>
+					<div class = "name">Helium</div>
+					<div class = "mass">1</div>
+				</td>
+			</tr>
+
+		</table>
+
+	</body>
+
+</html>

@@ -1,0 +1,19 @@
+ body		{
+ 				background-color:grey;
+			}
+
+ #container {
+ 			
+ 			}
+
+ #head_img	{
+ 			
+ 			}
+
+ #header	{
+ 				align-self: center;
+ 				height: 200px;
+ 				width: 1300px;	
+ 				background-color:grey;
+ 				border: 5px solid black;
+ 			}
