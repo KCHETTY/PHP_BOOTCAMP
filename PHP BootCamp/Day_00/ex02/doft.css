@@ -1,19 +1,139 @@
- body		{
- 				background-color:grey;
-			}
+body	{
+	background-color: rgb(80, 80, 80);
+}
 
- #container {
- 			
- 			}
+#mContainer	{
+	width: 1887px;
+	height: 912px;
+}
 
- #head_img	{
- 			
- 			}
+#Header	{
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	background-color: rgb(144, 144, 144);
+	height: 135px;
+	width: 1419px;
+}
 
- #header	{
- 				align-self: center;
- 				height: 200px;
- 				width: 1300px;	
- 				background-color:grey;
- 				border: 5px solid black;
- 			}
+.shadow	{
+	box-shadow: 10px 10px 15px 000000;
+}
+
+#image1	{
+	margin-top: 10px;
+	margin-left: 4px;
+	height: 110px;
+	width: 453px;
+
+}
+
+#loupe {
+	height: 134px;
+	margin-bottom: -30px;
+	margin-left: 685px;
+}
+
+#reload {
+	height: 20px;
+	position: absolute;
+	right: -644px;
+	top: 20px;
+}
+
+#left_box	{
+	border-radius: 10px;
+	background-color: rgb(144, 144, 144);
+	margin-left: 261px;
+	margin-top: 15px;
+	height: 423px;
+	width: 150px;
+}
+
+#center_box	{
+	border-radius: 10px;
+	height: 579px;
+	width: 1023px;
+	position: absolute;
+	right: -463px;
+	top: 162px;
+	background-color: rgb(144, 144, 144);
+}
+
+#right_box	{
+	border-radius: 10px;
+	position: absolute;
+	right: -634px;
+	bottom: -191px;
+	background-color: rgb(144, 144, 144);
+	height: 423px;
+	width: 150px;
+}
+
+#cluster {
+	height: 561px;
+	width: 1002px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+#arrow {
+	width: 70px;
+	margin-left: 35px;
+	margin-bottom: -70px;
+}
+
+#main {
+	width: 70px;
+	margin-left: 35px;
+	margin-bottom: -130px;
+}
+
+#oeil	{
+	width: 70px;
+	margin-left: 35px;
+	margin-bottom: -200px;
+}
+
+#outil	{
+	width: 70px;
+	margin-left: 35px;
+	margin-bottom: -266px;
+}
+
+#chat_icon	{
+	width: 70px;
+	margin-left: 35px;
+	margin-bottom: -322px;
+}
+
+#book	{
+	width: 70px;
+	position: absolute;
+	right: 36px;
+	top: 21px;
+}
+
+#towel	{
+	width: 70px;
+	position: absolute;
+	right: 36px;
+	top: 120px;
+}
+
+#repeat	{
+	background-image: url("resources/brick.jpg");
+	background-repeat: ;
+	width: 120px;
+	height: 69px;
+	position: absolute;
+	right: 15px;
+	bottom: 165px;
+}
+
+#green_box	{
+	background-color: rgb(136, 255, 137);
+	border-radius: 10px;
+	position: absolute;
+}

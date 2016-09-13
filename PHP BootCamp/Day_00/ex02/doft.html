@@ -8,11 +8,47 @@
 	</head>
 
 	<body>
-		<div id = "container">
-			<div id = "header">
-				<img id = "head_imgb" alt = "Header" src = "resources/day_of_the_42.png"/>
-				<img id = "head_img2" alt = "Header" src = "resources/loupe.png"/>
+		<div id = "mContainer">
+			<div id = "Header" class = "shadow">
+				<img id = "image1" alt = "image1" src="resources/day_of_the_42.png"/>
+				<img id = "loupe"  alt = "loupe"  src="resources/loupe.png" />
+				<img id = "close"  alt = "close"  src="resources/close.gif"/>
+				<img id = "reload" alt = "reload" src="resources/reload.png"/>
 			</div>
-		</div>
+
+			<div id = "info">
+				<div id = "left_box" class = "shadow">
+					<img id="arrow" alt="arrow" src="resources/arrow.png"/>
+					<img id="main" 	alt="main" 	src="resources/main.png"/>
+					<div id = "image_oeil">
+						<img id="oeil" 	alt="oeil" 	src="resources/oeil.png"/>
+					</div>
+					<img id="outil" alt="outil" src="resources/outil.png"/>
+					<img id="chat_icon" alt="C_icon" src="resources/chat-icon.png"/>
+				</div>
+				<div id = "center_box" class = "shadow">
+					<img id="cluster" alt="cluster" src="resources/cluster.jpg" usemap="#click"/>
+
+					<map name="click">
+					  <area shape="rect" coords="0,180,58,3," alt="ikea" href="www.ikea.com">
+					  <area shape="rect" coords="0,90,58,3" alt="apple" href="www.apple.com">
+					</map>
+				</div>
+				<div id = "right_box" class = "shadow">
+					<img id="book" alt="book" src="resources/book.png"/>
+					<img id="towel" alt="towel" src="resources/towel.png"/>
+					<div id = "repeat"></div>
+				</div>
+			</div>
+
+			<div id = "green_box" class = "shadow">
+				<p>Vous entrez alors dans une grande piece remplie d'ordinateurs</p>
+				<form action="green_form.asp">
+				<h6><i>-Bonjour</i></h6>
+				  <input type="text" name="text"><br>
+				  <input type="submit" value="respondre">
+				</form> 
+			</div>
+		</div>	
 	</body>
 </html>
