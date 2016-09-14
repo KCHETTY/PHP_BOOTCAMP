@@ -2,7 +2,7 @@
 <?php	
 	function ft_split($string)
 	{
-		$tmp_array = explode(" ", $string);
+		$tmp_array = preg_split("/[\s,]+/", $string);
 		sort($tmp_array);
 
 		$array = array();
@@ -12,6 +12,6 @@
 				array_push($array, $tmp);	
 		}
 		unset($tmp);
-		return ($array);	
+		return ($array);
 	}
 ?>

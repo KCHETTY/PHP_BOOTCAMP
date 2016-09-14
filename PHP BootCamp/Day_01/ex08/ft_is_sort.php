@@ -5,7 +5,7 @@
 	{
 		$temp = $arr;
 		sort($arr);
-		if ($temp !== $arr)
+		if ($temp != $arr)
 			return (FALSE);
 		else
 			return (TRUE);

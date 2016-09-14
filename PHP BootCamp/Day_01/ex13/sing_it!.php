@@ -25,7 +25,7 @@
 		echo "Because we're all children inside\n";
 	else if (strcmp("really ?", $concat) == 0)	
 	{
-		$int = random_int(0 , 1);
+		$int = rand(0 , 1);
 		if ($int = 1)
 			echo "No it's because it's april's fool\n";
 		else

@@ -5,9 +5,7 @@
 	$count = 0;
 	$ref = 0;
 
-	if ($argc != 2)
-		echo "Invalid Parameters...\n";
-	else
+	if ($argc == 2)
 	{
 		$array = explode(" ", $argv[1]);
 

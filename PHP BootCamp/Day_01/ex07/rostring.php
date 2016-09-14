@@ -5,9 +5,7 @@
 	$array = array();
 	$count = 0;
 
-	if ($argc == 1)
-		echo "Missing Arguments...\n";
-	else
+	if ($argc > 1)
 	{
 		$tmp_array = explode(" ", $argv[1]);		
 		

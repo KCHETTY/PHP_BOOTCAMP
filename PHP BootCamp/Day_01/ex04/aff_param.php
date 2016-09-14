@@ -1,10 +1,8 @@
 #!/usr/bin/php 
 <?php
 	
-	if ($argc == 1)
-		echo "No Parameters...\n";
-	else
-	{		
+	if ($argc > 1)
+	{
 		foreach ($argv as $tmp)
 		{
 			trim($tmp);

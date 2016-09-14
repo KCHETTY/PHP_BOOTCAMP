@@ -1,12 +1,11 @@
 #!/usr/bin/php 
 <?php
+
 	$alpha = array();	
 	$num = array();
 	$schar = array();
 
-	if ($argc == 1)
-		echo "Missing Parameters...\n";
-	else
+	if ($argc > 1)
 	{
 		while (++$count < $argc)
 			$concat = $concat. " " .$argv[$count];

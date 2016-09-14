@@ -5,13 +5,10 @@
 	$count = 0;
 	$array = array();
 	
-	if ($argc == 1)
-		echo "Missing Parameters\n";
-	else
+	if ($argc > 1)
 	{
 		while (++$count < $argc)
 			$concat = $concat. " " .$argv[$count];
-		echo "$concat\n";
 		$array = explode(" ", $concat);
 		sort($array);
 		foreach ($array as $tmp)

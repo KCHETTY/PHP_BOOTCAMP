@@ -1,38 +1,59 @@
 #!/usr/bin/php
 <?php
-	
+
+	function get_op($str)
+	{
+			if (strpos($str, "%") != false)
+				return ("%");
+			else if (strpos($str, "*") != false)
+				return ("*");
+			else if (strpos($str, "/") != false)
+				return ("/");
+			else if (strpos($str, "+") != false)
+				return ("+");
+			else if (strpos($str, "-") != false)
+				return ("-");
+			else
+				return (false);
+	}
+
 	$array = array();
 
 	if ($argc != 2)
-		echo "Missing Arguments..\n";
+		echo "Incorrect Parameters\n";
 	else
 	{	
-		$array = preg_split("/[\s,]+/", $argv[1]);
-		print_r($array);
-		
-		if (count($array) == 3) 
+		$op = get_op($argv[1]);
+		$array = explode($op, $argv[1]);
+
+		if ($op != false)
 		{
-			if (!is_numeric(trim($array[0])))
-				echo "Syntax Error\n";
-			else if (!is_numeric(trim($array[2])))
-				echo "Syntax Error\n";
-			else if (preg_match('/[\'^£$&()}{@#~?><>,|=_¬]/', trim($array[1])))
-				echo "Syntax Error\n";
-			else
+			if (count($array) == 2)
 			{
-				if (strcmp($array[1], "+") == 0)
-					echo "$array[0]" + "$array[2]\n";
-				if (strcmp($array[1], "-") == 0)
-					echo "$array[0]" - "$array[2]\n";
-				if (strcmp($array[1], "%") == 0)
-					echo "$array[0]" % "$array[2]\n";
-				if (strcmp($array[1], "*") == 0)
-					echo "$array[0]" * "$array[2]\n";
-				if (strcmp($array[1], "/") == 0)
-					echo "$array[0]" / "$array[2]\n";
+				if (!is_numeric(trim($array[0])))
+					echo "Syntax Error\n";
+				else if (!is_numeric(trim($array[1])))
+					echo "Syntax Error\n";
+				else
+				{
+					if (strcmp($op, "+") == 0)
+						echo "$array[0]" + "$array[1]". "\n";
+					if (strcmp($op, "-") == 0)
+						echo "$array[0]" - "$array[1]". "\n";
+					if (strcmp($op, "%") == 0)
+						echo "$array[0]" % "$array[1]". "\n";
+					if (strcmp($op, "*") == 0)
+						echo "$array[0]" * "$array[1]". "\n";
+					if (strcmp($op, "/") == 0)
+						echo "$array[0]" / "$array[1]". "\n";
+				}
 			}
+			else if (count($array) != 2)
+				echo "Incorrect Parameters\n";
+			else
+				echo "Syntax Error\n";	
 		}
 		else
-			echo "Too many arguments.\n";	
+			echo "Syntax Error\n";
 	}
 ?>
