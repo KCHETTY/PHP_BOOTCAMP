@@ -18,7 +18,7 @@
 		{
 			if (!empty($tmp))
 			{
-				trim($tmp);	
+				$tmp = trim($tmp);	
 				echo "$tmp\n";
 			}
 		}
