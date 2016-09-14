@@ -12,17 +12,15 @@
 			<div id = "Header" class = "shadow">
 				<img id = "image1" alt = "image1" src="resources/day_of_the_42.png"/>
 				<img id = "loupe"  alt = "loupe"  src="resources/loupe.png" />
-				<img id = "close"  alt = "close"  src="resources/close.gif"/>
-				<img id = "reload" alt = "reload" src="resources/reload.png"/>
+				<a href = "http://www.relaischateaux.com"><img id = "close"  alt = "close"  src="resources/close.gif"/></a>
+				<a href = "http://www.disney.com"><img id = "reload" alt = "reload" src="resources/reload.png" /></a>
 			</div>
 
 			<div id = "info">
 				<div id = "left_box" class = "shadow">
 					<img id="arrow" alt="arrow" src="resources/arrow.png"/>
 					<img id="main" 	alt="main" 	src="resources/main.png"/>
-					<div id = "image_oeil">
-						<img id="oeil" 	alt="oeil" 	src="resources/oeil.png"/>
-					</div>
+					<img id="oeil" 	alt="oeil" 	src="resources/oeil.png"/>
 					<img id="outil" alt="outil" src="resources/outil.png"/>
 					<img id="chat_icon" alt="C_icon" src="resources/chat-icon.png"/>
 				</div>
@@ -30,8 +28,8 @@
 					<img id="cluster" alt="cluster" src="resources/cluster.jpg" usemap="#click"/>
 
 					<map name="click">
-					  <area shape="rect" coords="0,180,58,3," alt="ikea" href="www.ikea.com">
-					  <area shape="rect" coords="0,90,58,3" alt="apple" href="www.apple.com">
+					  <area shape="rect" coords="345,350,445,450," alt="ikea" href="http://www.ikea.com">
+					  <area shape="rect" coords="750,250,950,450" alt="apple" href="http://www.apple.com/">
 					</map>
 				</div>
 				<div id = "right_box" class = "shadow">
@@ -42,11 +40,13 @@
 			</div>
 
 			<div id = "green_box" class = "shadow">
-				<p>Vous entrez alors dans une grande piece remplie d'ordinateurs</p>
 				<form action="green_form.asp">
-				<h6><i>-Bonjour</i></h6>
-				  <input type="text" name="text"><br>
-				  <input type="submit" value="respondre">
+				<div id = "stuff">
+					<font size="4">Vous <font size="6">entrez</font> alors dans une grande piece remplie <br>d'<span class="shadowword">ordinateurs</span>...<br>   
+            		<i>-Bonjour, vous &#234;tes nouveau ici?</i><br></font>
+				  <input type="text" name="text"/>
+				  <input type="submit" value="respondre"/>
+				  </div>
 				</form> 
 			</div>
 		</div>	
